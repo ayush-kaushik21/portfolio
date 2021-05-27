@@ -1,0 +1,21 @@
+.scrollBar__Button {
+ position: fixed;
+ bottom: 25px;
+ right: 25px;
+
+ .expand__up {
+  font-size: 3rem;
+  background-color: $linkedin;
+  color: $primary__white;
+  border-radius: 50%;
+ }
+}
+
+// media queries
+@media(max-width:768px){
+
+ .scrollBar__Button {
+   bottom: 25px;
+   right: 25px;
+ }
+}

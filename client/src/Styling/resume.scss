@@ -1,0 +1,65 @@
+.resumeBody{
+ background-color: $background__color;
+ height: 100%;
+ width: 100%;
+ padding-bottom: 4rem;
+ overflow-x: hidden;
+
+ .container {
+  max-width: 620px;
+
+  .resume {
+
+   &__h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: $main__color;
+    padding-bottom: 5rem;
+    padding-top: 1.5rem;
+
+
+    .schoolicon{
+     font-size: 4rem;
+     color: $linkedin;
+    }
+   }
+
+   &__upperPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .resume__btn{
+      text-decoration: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 30px;
+      color: $primary__white;
+      transition: all 0.5s ease;
+         text-transform: Uppercase;
+         background-color: $linkedin;
+         border: 2px solid $linkedin;
+
+         &:hover{
+          background-color: $primary__white;
+          color: $linkedin;
+         }
+    }
+   }
+  }
+ }
+}
+
+@media(max-width:768px){
+ .resumeBody {
+  overflow-x: hidden;
+  .container {
+   .resume {
+    &__h4 {
+     padding-bottom: 2.5rem;
+     margin: 0 2rem;
+    }
+   }
+  }
+ }
+}

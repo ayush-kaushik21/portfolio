@@ -1,0 +1,82 @@
+@import './common.scss';
+
+.footer{
+   // margin-top: auto;
+   width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-size: 0.9rem;
+ color: $main__color;
+ padding: 0 2rem;
+
+ .left{
+  .heartIcon{
+   font-size: medium;
+   color: $heart__color;
+  }
+
+  span{
+   color: $mail
+  }
+  
+  }
+ }
+
+ .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__write {
+   h6 {
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+   }
+   
+   }
+   &__follow {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    h6 {
+     font-weight: bold;
+     font-size: 0.9rem;
+     letter-spacing: 1.5px;
+    }
+   }
+}
+
+// media Queries
+@media(max-width:768px){
+   .footer{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        .left{
+           p{
+              padding: 0 2rem;
+              padding-top: 1rem;
+           }
+        }
+
+      .right{
+         &__write{
+            h6{
+               display: none;
+            }
+            p{
+               display: none;
+            }
+         }
+         &__follow{
+            padding-top: 0;
+            padding-left: 0;
+            h6{
+               display: none;
+            }
+         }
+      }
+   }
+}

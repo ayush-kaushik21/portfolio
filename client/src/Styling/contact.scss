@@ -1,0 +1,120 @@
+.contact__container{
+ .container{
+  .contact__heading {
+   text-align: center;
+   font-size: 2.5rem;
+   color: $main__color;
+  }
+  .contact__border{
+   height: 4px;
+   margin-left: 32rem;
+   background-color: orange;
+   width: 6rem;
+   margin-bottom: 1.5rem;
+   border-radius: 10px;
+  }
+  .row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   .contact__Img{
+    padding: 5rem;
+   }
+
+   .contact__location{
+    padding: 4rem 2rem;
+    background: $background__color;
+    border-radius: 10px;
+
+    .location__map{
+     width: 100%;
+     height: 300px;
+    }
+   }
+  }
+  .row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 4rem 0;
+
+   .contact__form{
+    .form-group{
+     padding: 1rem 2rem;
+    }
+    label{
+     color: $orange;
+     font-size: 1.2rem;
+    }
+    input,textarea{
+     border: none;
+     border-bottom: 2px solid $main__color;
+     color: $main__color;
+
+     &:focus{
+      outline-width: 0;
+      box-shadow: none;
+     }
+    }
+    small{
+     font-size: 0.7rem;
+    }
+    .submit__btn{
+     text-decoration: none;
+     padding: 0.5rem 1.5rem;
+     border-radius: 30px;
+     color: $primary__white;
+     transition: all 0.5s ease;
+     float: right;
+     margin: 1.5rem 0;
+     margin-right: 3rem;
+     background-color: $orange;
+     outline: none;
+     border: 2px solid $orange;
+     
+     &:hover{
+      background-color: $primary__white;
+      border: 2px solid $orange;
+      color: $orange;
+     }
+
+     &:active{
+      transform: scale(1.2);
+      transition: all 0.5s ease;
+     }
+    }
+   }
+  }
+  .contact__Img__left{
+       padding: 2rem;
+  }
+ }
+}
+
+// media Queries
+@media(max-width:768px) {
+ .contact__container {
+  .container {
+   .row {
+    .contact__Img {
+     padding: 0 0 2rem 0;
+    }
+    .contact__location {
+     padding: 2rem 1rem;
+    }
+   }
+
+   .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+
+     .contact__Img__left {
+     padding: 0 0 2rem 0;
+     }
+   }
+  }
+ }
+}

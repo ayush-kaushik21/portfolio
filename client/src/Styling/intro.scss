@@ -1,0 +1,264 @@
+@import './common.scss';
+
+.intro{
+  width: 100%;
+  height: 100%;
+  
+  .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    --bs-gutter-x:0;
+    
+    .left{
+      height: 100%;
+       background-color: $background__color;
+       width: 100%;
+       display: flex;
+       
+       justify-content: center;
+       align-items: center;
+       
+       .card{
+         margin: 4rem 0;
+        width: 55%;
+        margin-left: 10rem;
+        background-color:$card__color;
+        text-align: center;
+        z-index: 2;
+
+        .imgContainer{
+          margin: 2rem 0;
+          border-radius: 50%;
+        }
+
+        h4{
+          font-weight: bold;
+          font-size: 2rem;
+          letter-spacing: 2px;
+          color: $main__color;
+        }
+
+        .border {
+        height: 4px;
+        margin-left: 8rem;
+        background-color: orange;
+        width: 6rem;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+        }
+        
+        .typed-text{
+          color: $main__color;
+          font-size: 1.5rem;
+          margin-bottom: 1.5rem;
+          letter-spacing: 2px;
+        }
+
+        .insta__section{
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: space-between;
+           
+          &__right{
+            .icon__color{
+              color: $main__color;
+            }
+          }
+          &__left{
+            .icon__color{
+              color: $main__color;
+            }
+            .heart__color{
+              color: $main__color;
+            }
+          }
+        }
+      }
+    }
+
+    .right{
+      width: 70%;
+      height: inherit;
+      background-color: $primary__white;
+
+      .myCard{
+        color: $main__color;
+        padding-left: 3rem;
+
+        h1{
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+          text-transform: capitalize;
+          font-size: 4.5rem;
+        }
+
+        &__h4{
+          text-transform: capitalize;
+
+          span{
+            color: $linkedin;
+            font-weight: bold;
+          }
+        }
+
+        &__buttons{
+          padding-top: 2rem;
+        }
+
+         h5 {
+           font-size: 1.1rem;
+          letter-spacing: 0.04rem;
+          word-spacing: 0.1rem;
+           padding: 2rem 0 1rem 0;
+         }
+
+         .tagline {
+           padding: 0;
+           color: $linkedin;
+         }
+      }
+    }
+  }
+}
+
+.new__heart__color {
+  transition: all 5s ease;
+  color: $heart__color !important;
+  transform: scale(1.15);
+}
+
+
+// media Queries
+
+@media(max-width:768px){
+ .intro {
+   width: 100%;
+   height: 100%;
+
+   .row {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+     --bs-gutter-x: 0;
+
+     .left {
+       height: 100%;
+       background-color: $background__color;
+       width: 100%;
+      //  display: flex;
+
+      //  justify-content: center;
+      //  align-items: center;
+
+       .card {
+         margin: 2rem 1rem;
+         width: 100%;
+         
+         z-index: 0;
+
+         .imgContainer {
+           margin: 2rem 0;
+           border-radius: 50%;
+         }
+
+         h4 {
+           font-weight: bold;
+           font-size: 2rem;
+           letter-spacing: 2px;
+           color: $main__color;
+         }
+
+         .border {
+           height: 4px;
+           margin-left: 6rem;
+           background-color: orange;
+           width: 6rem;
+           margin-bottom: 1.5rem;
+           border-radius: 10px;
+         }
+
+         .typed-text {
+           color: $main__color;
+           font-size: 1.5rem;
+           margin-bottom: 1.5rem;
+           letter-spacing: 2px;
+         }
+
+         .insta__section {
+           display: flex;
+           align-items: center;
+           width: 100%;
+           justify-content: space-between;
+
+           &__right {
+             .icon__color {
+               color: $main__color;
+             }
+           }
+
+           &__left {
+             .icon__color {
+               color: $main__color;
+             }
+
+             .heart__color {
+               color: $main__color;
+             }
+           }
+         }
+       }
+     }
+
+     .right {
+       width: 100%;
+       height: inherit;
+       background-color: $primary__white;
+       text-align: center;
+
+       .myCard {
+         color: $main__color;
+         padding-left: 0;
+
+         h1 {
+           padding-top: 2rem;
+           padding-bottom: 1rem;
+           text-transform: capitalize;
+           font-size: 4.5rem;
+         }
+
+         &__h4 {
+           text-transform: capitalize;
+
+           span {
+             color: $linkedin;
+             font-weight: bold;
+           }
+         }
+
+         &__buttons {
+           padding-top: 2rem;
+         }
+
+         h5{
+           font-size: 1rem;
+           padding: 2rem 0;
+         }
+
+         .tagline{
+           padding: 0;
+           padding-bottom: 1.5rem;
+         }
+
+       }
+     }
+   }
+ }
+}

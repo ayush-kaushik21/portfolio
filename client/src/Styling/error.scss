@@ -1,0 +1,21 @@
+.error__container{
+ .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  .error__img__container{
+   height: 50%;
+  width: 50%;
+  
+
+  }
+  .error__h3{
+   text-align: center;
+   padding-top: 2rem;
+   font-size: 3rem;
+  }
+ }
+}
